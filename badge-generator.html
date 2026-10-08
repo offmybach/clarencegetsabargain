@@ -98,17 +98,17 @@ canvas#badge{width:100%;height:auto;display:block}
     <div class="form-group">
       <label>Choose Clarence</label>
       <div class="char-grid" id="char-grid">
-        <div class="char-option active" onclick="setChar(this,'forsite/clarence_point.png')">
-          <img src="forsite/clarence_point.png" alt="Clarence pointing"><span>Pointing</span>
+        <div class="char-option active" onclick="setChar(this,'forsite/clarence_point.webp')">
+          <img src="forsite/clarence_point.webp" alt="Clarence pointing"><span>Pointing</span>
         </div>
-        <div class="char-option" onclick="setChar(this,'forsite/clarence-arms.png')">
-          <img src="forsite/clarence-arms.png" alt="Clarence arms out"><span>Arms Out</span>
+        <div class="char-option" onclick="setChar(this,'forsite/clarence-arms.webp')">
+          <img src="forsite/clarence-arms.webp" alt="Clarence arms out"><span>Arms Out</span>
         </div>
-        <div class="char-option" onclick="setChar(this,'forsite/clarence-laugh.png')">
-          <img src="forsite/clarence-laugh.png" alt="Clarence laughing"><span>Laughing</span>
+        <div class="char-option" onclick="setChar(this,'forsite/clarence-laugh.webp')">
+          <img src="forsite/clarence-laugh.webp" alt="Clarence laughing"><span>Laughing</span>
         </div>
-        <div class="char-option" onclick="setChar(this,'forsite/clarence-armsfoldedcrop.png')">
-          <img src="forsite/clarence-armsfoldedcrop.png" alt="Clarence confident"><span>Confident</span>
+        <div class="char-option" onclick="setChar(this,'forsite/clarence-armsfoldedcrop.webp')">
+          <img src="forsite/clarence-armsfoldedcrop.webp" alt="Clarence confident"><span>Confident</span>
         </div>
       </div>
     </div>
@@ -152,13 +152,13 @@ canvas#badge{width:100%;height:auto;display:block}
 <canvas id="badge-story" width="1080" height="1920" style="display:none"></canvas>
 
 <script>
-let selectedChar = 'forsite/clarence_point.png';
+let selectedChar = 'forsite/clarence_point.webp';
 let selectedRole = 'Kid Reader 📚';
 let selectedStyle = 'classic';
 const charImages = {};
 
 // Preload all character images
-['forsite/clarence_point.png','forsite/clarence-arms.png','forsite/clarence-laugh.png','forsite/clarence-armsfoldedcrop.png'].forEach(src=>{
+['forsite/clarence_point.webp','forsite/clarence-arms.webp','forsite/clarence-laugh.webp','forsite/clarence-armsfoldedcrop.webp'].forEach(src=>{
   const img = new Image();
   img.src = src;
   charImages[src] = img;
